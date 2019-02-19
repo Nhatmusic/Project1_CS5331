@@ -16,7 +16,7 @@ function heatmap_display(url, heatmapId, paletteName) {
     }
 
     // define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
-    var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
+    var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 1]).on("zoom", zoom);
     debugger
     //==================================================
     var viewerWidth = 60000;
@@ -46,7 +46,7 @@ function heatmap_display(url, heatmapId, paletteName) {
         svg = d3.select(heatmapId).append("svg")
             .attr("width", viewerWidth)
             .attr("height", viewerHeight)
-	    // .call(zoomListener);
+	    .call(zoomListener);
 
         var maing = svg.selectAll('g').data(songs).enter()
             .append("g")
