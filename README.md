@@ -1,14 +1,16 @@
 # Project1_CS5331
 AUDIO CHROMA FEATURE VISUALIZATION
+![Alt text](https://github.com/Nhatmusic/Project1_CS5331/blob/master/image.jpg?raw=true "Title")
 Link: https://nhatmusic.github.io/Project1_CS5331/
 1. Audio Feature Extraction
 - Chroma features are an interesting and powerful representation for music audio in which the entire spectrum is projected onto 12 bins     representing the 12 distinct semitones (or chroma) of the musical octave.
 - Twelve chroma values represented by the set
   {C, C♯, D, D♯, E ,F, F♯, G, G♯, A, A♯, B}
 - Use Meyda library https://github.com/meyda/meyda to extract Chroma Feature of 10 songs
+- Sample Rate: 44100 sample/second, Window Size: 2048, 20 features were extracted per second, each window lasts 46.4 ms.
 
 2. Purpose of the Visualization
 - Chord recognition
 - Song Cover Identification
-![alt text](https://raw.githubusercontent.com/Nhatmusic/Project1_CS5331/blob/master/Capture.PNG)
+
 
