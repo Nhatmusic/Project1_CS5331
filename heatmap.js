@@ -46,7 +46,7 @@ function heatmap_display(url, heatmapId, paletteName) {
         svg = d3.select(heatmapId).append("svg")
             .attr("width", viewerWidth)
             .attr("height", viewerHeight)
-	    .call(zoomListener);
+	    // .call(zoomListener);
 
         var maing = svg.selectAll('g').data(songs).enter()
             .append("g")
