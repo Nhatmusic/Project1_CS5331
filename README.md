@@ -8,6 +8,7 @@ Link: https://nhatmusic.github.io/Project1_CS5331/
   {C, C♯, D, D♯, E ,F, F♯, G, G♯, A, A♯, B}
 - Use Meyda library https://github.com/meyda/meyda to extract Chroma Feature of 10 songs
 - Sample Rate: 44100 sample/second, Window Size: 2048, 20 features were extracted per second, each window lasts 46.4 ms.
+- Intensitive of chroma feature is calculated in dB.
 
 2. Purpose of the Visualization
 - Chord recognition
