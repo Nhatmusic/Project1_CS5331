@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ef70cc3-ffaf-4088-8151-bc7a95eca8c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/heatmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/heatmap.js" afterDir="false" />
-    </list>
+    <list default="true" id="4ef70cc3-ffaf-4088-8151-bc7a95eca8c8" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,8 +16,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/heatmap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="48" column="8" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="31" />
+            <state relative-caret-position="195">
+              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
             </state>
           </provider>
         </entry>
@@ -161,12 +159,12 @@
       <workItem from="1550431497203" duration="18070000" />
       <workItem from="1550507383643" duration="14152000" />
       <workItem from="1550531837240" duration="32469000" />
-      <workItem from="1550609973529" duration="2020000" />
+      <workItem from="1550609973529" duration="2252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67442000" />
+    <option name="totallyTimeSpent" value="67674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -224,8 +222,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/heatmap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="48" column="8" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="31" />
+        <state relative-caret-position="195">
+          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
         </state>
       </provider>
     </entry>
