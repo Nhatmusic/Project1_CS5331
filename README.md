@@ -12,5 +12,8 @@ Link: https://nhatmusic.github.io/Project1_CS5331/
 2. Purpose of the Visualization
 - Chord recognition
 - Song Cover Identification
+Wikipedia
+![Alt text](https://github.com/Nhatmusic/Project1_CS5331/blob/master/chroma.jpg)
+
 
 
