@@ -17,7 +17,7 @@ function heatmap_display(url, heatmapId, paletteName) {
 
     // define the zoomListener which calls the zoom function on the "zoom" event constrained within the scaleExtents
     var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 1]).on("zoom", zoom);
-    debugger
+
     //==================================================
     var viewerWidth = 60000;
     var viewerHeight = 6000;
