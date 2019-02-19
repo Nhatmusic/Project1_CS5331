@@ -1,4 +1,5 @@
-var cellSize = 20,
+var classesNumber=9,
+    cellSize = 20,
     rowLabelMargin=10;
 
 //#########################################################
@@ -18,8 +19,8 @@ function heatmap_display(url, heatmapId, paletteName) {
     var zoomListener = d3.behavior.zoom().scaleExtent([0.1, 3]).on("zoom", zoom);
     debugger
     //==================================================
-    var viewerWidth = 5000;
-    var viewerHeight = 5000;
+    var viewerWidth = 60000;
+    var viewerHeight = 6000;
     var viewerPosTop = 200;
     var viewerPosLeft = 50;
 
@@ -97,9 +98,9 @@ function heatmap_display(url, heatmapId, paletteName) {
             .attr("class", "row")
             .attr("transform", (row,i)=> `translate(30,${i*cellSize})`);
         //Build the xAsis
-        var xAxisG = maing.append("g").attr("transform", `translate(${cellSize*2}, ${500})`);
-        var xScale = d3.scale.linear().domain([0,3000]).range([0, (row)=>row.length]);
-        var xAxis = d3.svg.axis(xScale).orient("bottom").ticks(10)
+        var xAxisG = maing.append("g").attr("transform", `translate(${cellSize*1.5}, ${250})`);
+        var xScale = d3.scale.linear().domain([0,150]).range([0, 3000*cellSize]);
+        var xAxis = d3.svg.axis().scale(xScale).orient("bottom").ticks(150)
         xAxisG.call(xAxis);
 
          var j;
