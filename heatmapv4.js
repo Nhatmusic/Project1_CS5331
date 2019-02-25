@@ -5,7 +5,7 @@ var classesNumber = 9,
     viewerPosTop = 200,
     viewerPosLeft = 50,
     viewerPosBot = 300,
-    rowLabelMargin=10,
+    rowLabelMargin= 10,
     legendElementWidth = cellSize * 2;
 
 // main function
@@ -104,7 +104,6 @@ function main (url, heatmapId, paletteName) {
 
 
         var j;
-        debugger
         var heatmap= rows.selectAll(".cell")
             .data(function(row,rownumber) {
                 j=rownumber;
