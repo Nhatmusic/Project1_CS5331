@@ -1,18 +1,13 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
-<!--
- ##########################################################################
- Patrick.Brockmann@lsce.ipsl.fr
- ##########################################################################
--->
 
-<script src="./JS/d3.v3.js"></script>
+<script src="./JS/d3.v4.min.js"></script>
 <script src="./JS/colorbrewer.v1.min.js"></script>
 <script src="./JS/jquery-1.11.0.min.js"></script>
 <script src="./JS/underscore-min.js"></script>
 
-<script src="heatmap.js"></script>
+<script src="heatmapv4.js"></script>
 <title>Song Chroma Feature (Pitch) Visualization</title>
 <link rel="stylesheet" href="heatmap.css" />
 
@@ -20,7 +15,7 @@
 
 <script>
 $(document).ready(function() {
-	heatmap_display("frequency.json", "#heatmap", "Blues");
+	main("frequency.json", "#heatmap", "Blues");
 });
 </script>
 
@@ -40,71 +35,22 @@ Palette:
   <option value="BrBG">BrBG</option>
 </select>
 
-<audio crossorigin="anonymous" id="audioElement" src="./audio/1shapeofyou.mp3" ></audio>
-<div>
-  <button onclick="document.getElementById('audioElement').play()">Play the Audio</button>
-  <button onclick="document.getElementById('audioElement').pause()">Pause the Audio</button>
-  <button onclick="document.getElementById('audioElement').volume+=0.1">Increase Volume</button>
-  <button onclick="document.getElementById('audioElement').volume-=0.1">Decrease Volume</button>
-</div>
-<!--<audio id="audio" preload="auto" tabindex="0"  >-->
-  <!--<source src="./audio/1shapeofyou.mp3">-->
-<!--</audio>-->
-<ul id="playlist">
-  <li class="active">
-    <a href="https://soundcloud.com/edsheeran/shape-of-you">
-      Shape Of You - Ed Sheeran
-    </a>
-  </li>
-  <li>
-    <a href="https://soundcloud.com/classical-piano-hits/canon-in-d">
-      Canon - Pachelbel
-    </a>
-  </li>
-  <li>
-    <a href="https://soundcloud.com/sitorya/camila-cabello-havana-ft-young-thug-dim-wilder-remixmp3converternet">
-      Havanna - Camilo Cabella
-    </a>
-  </li>
-  <li>
-    <a href="https://soundcloud.com/matthysun/girls-like-you">
-      Girls Like You - Maroon 5
-    </a>
-  </li>
-  <li>
-    <a href="https://soundcloud.com/interscope/maroon-5-sugar">
-      Sugar-Maroon 5
-    </a>
-  </li>
-  <li>
-    <a href="https://www.youtube.com/watch?v=nM0xDI5R50E">
-      BiBiBi - IU
-    </a>
-  </li>
-  <li>
-    <a href="https://soundcloud.com/jessiereyez/body-count">
-      Body Count - Jessie Reyez
-    </a>
-  </li>
-  <li>
-    <a href="https://soundcloud.com/kuning-mentega/close-to-you-carpenter-cover">
-      Close To You - Carpenter
-    </a>
-  </li>
-  <li>
-    <a href="https://soundcloud.com/marshmellomusic/happier-ft-bastille">
-      Happier - Marshmellow ft Bastille
-    </a>
-  </li>
-  <li>
-    <a href="http://www.archive.org/download/PatrikbkarlChamberSymph/PatrikbkarlChamberSymph_vbr_mp3.zip">
-      Love Lies - Khalid&Normani
-    </a>
-  </li>
-</ul>
+Choose song:
+<select id="song">
+  <option id="song0" selected>Shape of You</option>
+  <option id="song1">Canon in D</option>
+  <option id="song2">Havana </option>
+  <option id="song3">Girls Like You</option>
+  <option id="song4">Sugar</option>
+  <option id="song5">BiBiBi</option>
+  <option id="song6">Body Count</option>
+  <option id="song7">Close To You</option>
+  <option id="song8">Happier</option>
+  <option id="song9">Lovelies</option>
+</select>
+
 <h1>Song Chroma Feature Visualization</h1>
 <div id="heatmap"></div>
-
 
 </body>
 </html>

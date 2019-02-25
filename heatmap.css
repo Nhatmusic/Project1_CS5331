@@ -2,6 +2,11 @@
   font-size: 8px;
   font-family: monospace;
 }
+.zoom {
+  cursor: move;
+  fill: none;
+  pointer-events: all;
+}
 rect.bordered {
   stroke: #E6E6E6;
   stroke-width:2px;
