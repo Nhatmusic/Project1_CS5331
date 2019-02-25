@@ -16,5 +16,10 @@ Link: https://nhatmusic.github.io/Project1_CS5331/
 Wikipedia
 ![Alt text](https://github.com/Nhatmusic/Project1_CS5331/blob/master/chroma.jpg)
 
+3. Finding:
+For example, for the first 2 seconds of the song "Shape of You", the visualization show that the notes with dark blue (high intensitive) appear mostly including C#, E, A, D#, B. These notes match with the main chord played in the song.
+![Alt text](https://github.com/Nhatmusic/Project1_CS5331/blob/master/shapeofyou.jpg)
+
+
 
 
